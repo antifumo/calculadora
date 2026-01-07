@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #1e1e2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculadora {
+  background: #2a2a3d;
+  padding: 20px;
+  border-radius: 15px;
+  width: 260px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 22px;
+  text-align: right;
+  padding: 10px;
+  background: #111;
+  color: #0f0;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  background: #3c3c55;
+  color: white;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #50507a;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Operadores */
+button:nth-child(13),
+button:nth-child(14),
+button:nth-child(15),
+button:nth-child(16) {
+  background: #ff9500;
+}
+
+button:nth-child(13):hover,
+button:nth-child(14):hover,
+button:nth-child(15):hover,
+button:nth-child(16):hover {
+  background: #ffaa33;
+}
+
+/* Igual */
+button:nth-child(17) {
+  background: #00c853;
+  grid-column: span 2;
+}
+
+button:nth-child(17):hover {
+  background: #00e676;
+}
+
+/* Limpar */
+button:nth-child(18) {
+  background: #d50000;
+  grid-column: span 2;
+}
+
+button:nth-child(18):hover {
+  background: #ff1744;
+}
