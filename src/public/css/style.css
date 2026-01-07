@@ -58,7 +58,9 @@ button:active {
 }
 
 /* Operadores */
-button:nth-child(13),
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
 button:nth-child(14),
 button:nth-child(15),
 button:nth-child(16) {
